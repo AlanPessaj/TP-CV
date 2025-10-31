@@ -1,6 +1,6 @@
 :root {
   font-family: 'Swanky and Moo Moo', 'Comic Sans MS', 'Comic Neue', cursive;
-  background-color: #f6d834;
+  background-color: #f7ee3d;
   color: #c92525;
 }
 
@@ -13,7 +13,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #f6d834;
+  background-color: #f7ee3d;
 }
 
 #root {
