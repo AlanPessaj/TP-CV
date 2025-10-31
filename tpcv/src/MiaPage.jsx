@@ -53,7 +53,7 @@ export default function MiaPage() {
           <div className="details-languages">
             <h3>idiomas:</h3>
             <p>español</p>
-            <p>y</p>
+            <p>e</p>
             <p>inglés</p>
           </div>
           <div className="details-hobbies">
