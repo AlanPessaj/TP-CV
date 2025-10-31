@@ -1,5 +1,7 @@
 import heroImage from './assets/images/portfolio-hero.png'
 import aboutBackground from './assets/images/about-background.png'
+import middleBackground from './assets/images/middle-background.png'
+import bottomBackground from './assets/images/bottom-background.png'
 import './PortfolioPage.css'
 
 export default function PortfolioPage() {
@@ -9,6 +11,7 @@ export default function PortfolioPage() {
         <img
           src={heroImage}
           alt="Portafolio de Mia"
+          draggable={false}
           className="portfolio-hero-image"
         />
       </header>
@@ -18,6 +21,7 @@ export default function PortfolioPage() {
           <img
             src={aboutBackground}
             alt="Hoja con dibujo de Mia sujetada con chinche"
+            draggable={false}
             className="about-background"
           />
           <div className="about-content">
@@ -36,33 +40,44 @@ export default function PortfolioPage() {
       </section>
 
       <section className="details-section">
-        <article className="detail-card detail-education">
-          <h3>educación:</h3>
-          <p>Bachillerato en ORT con orientación a TIC.</p>
-        </article>
-
-        <article className="detail-card detail-languages">
-          <h3>idiomas:</h3>
-          <ul>
-            <li>español</li>
-            <li>inglés</li>
-          </ul>
-        </article>
-
-        <article className="detail-card detail-hobbies">
-          <h3>hobbies:</h3>
-          <p>
-            Me gusta dibujar y pintar, como también disfruto de tocar el violín.
-          </p>
-        </article>
+        <div className="details-board">
+          <img
+            src={middleBackground}
+            alt="Tablón con secciones de educación, idiomas y hobbies"
+            draggable={false}
+            className="details-background"
+          />
+          <div className="details-education">
+            <p>Bachillerato en ORT con orientación a TIC.</p>
+          </div>
+          <div className="details-languages">
+            <h3>idiomas:</h3>
+            <p>español</p>
+            <p>y</p>
+            <p>inglés</p>
+          </div>
+          <div className="details-hobbies">
+            <h3>hobbies:</h3>
+            <p>
+              Me gusta dibujar y pintar, como también disfruto de tocar el violín.
+            </p>
+          </div>
+        </div>
       </section>
 
       <footer className="contact-section">
-        <div className="brush-stroke" />
-        <div className="contact-card">
-          <h3>contacto:</h3>
-          <a href="mailto:dzwonikmia@gmail.com">dzwonikmia@gmail.com</a>
-          <span>+54 911 5504-0113</span>
+        <div className="contact-wrapper">
+          <img
+            src={bottomBackground}
+            alt="Pincel y trazo de pintura roja"
+            draggable={false}
+            className="contact-background"
+          />
+          <div className="contact-card">
+            <h3>contacto:</h3>
+            <a href="mailto:dzwonikmia@gmail.com">dzwonikmia@gmail.com</a>
+            <span>+54 911 5504-0113</span>
+          </div>
         </div>
       </footer>
     </div>
