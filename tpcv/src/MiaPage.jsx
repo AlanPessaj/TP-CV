@@ -2,9 +2,9 @@ import heroImage from './assets/images/portfolio-hero.png'
 import aboutBackground from './assets/images/about-background.png'
 import middleBackground from './assets/images/middle-background.png'
 import bottomBackground from './assets/images/bottom-background.png'
-import './PortfolioPage.css'
+import './MiaPage.css'
 
-export default function PortfolioPage() {
+export default function MiaPage() {
   return (
     <div className="portfolio-page">
       <header className="portfolio-hero">
