@@ -2,42 +2,9 @@ import alanBackground from './assets/images/alan-background.png'
 import alanCursor from './assets/images/alan-cursor.png'
 import alanNotepads from './assets/images/alan-notepads.png'
 import alanSystemMessage from './assets/images/alan-systemmessage.png'
-import alanProjectsWindow from './assets/images/proyectos.png'
-import ticardeWindow from './assets/images/ticarde.png'
-import buzzconWindow from './assets/images/buzzcon.png'
-import unityWindow from './assets/images/unity.png'
 import './AlanPage.css'
 
 export default function AlanPage() {
-  const projects = [
-    {
-      title: 'TICARDE',
-      description:
-        'Arcade con tres juegos retro que desarrollé como proyecto escolar junto a mi equipo.',
-      image: ticardeWindow,
-      alt: 'Ventana con logo de Ticarde',
-      variant: 'ticarde',
-    },
-    {
-      title: 'Buzzcon',
-      description:
-        'Buzzcon busca conectar a comunidades con experiencias interactivas diseñadas para ferias tecnológicas.',
-      image: buzzconWindow,
-      alt: 'Ventana con logo de Buzzcon',
-      variant: 'buzzcon',
-    },
-    {
-      title: 'Unity Networks',
-      description:
-        'Trabajo como desarrollador para Unity Networks, una comunidad online enfocada en videojuegos.',
-      image: unityWindow,
-      alt: 'Ventana de Paint con el logo de Unity Networks',
-      variant: 'unity',
-    },
-  ]
-
-  const [ticardeProject, buzzconProject, unityProject] = projects
-
   return (
     <div className="alan-page">
       <section className="alan-top">
@@ -119,74 +86,6 @@ export default function AlanPage() {
             </p>
             <p className="alan-info__code">{'}'}</p>
           </article>
-
-          <section className="alan-projects" aria-labelledby="alan-projects-heading">
-            <h2 id="alan-projects-heading" className="sr-only">
-              Proyectos
-            </h2>
-            <div className="alan-dialog-wrapper alan-projects__dialog">
-              <img
-                src={alanProjectsWindow}
-                alt=""
-                aria-hidden="true"
-                className="alan-dialog alan-projects__dialog-img"
-                draggable={false}
-              />
-              <span className="alan-dialog__text alan-projects__dialog-text">
-                proyectos
-              </span>
-            </div>
-
-            <div className="alan-projects__list">
-              <div className="alan-projects__pair">
-                {[ticardeProject, buzzconProject].map((project) => (
-                  <article
-                    className={`alan-project-card alan-project-card--${project.variant}`}
-                    key={project.title}
-                  >
-                    <div className="alan-project-card__media">
-                      <img
-                        src={project.image}
-                        alt={project.alt}
-                        className="alan-project-card__image"
-                        draggable={false}
-                      />
-                      <div className="alan-project-card__overlay">
-                        <p className="alan-project-card__title">
-                          {project.title}
-                        </p>
-                        <p className="alan-project-card__text">
-                          {project.description}
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
-
-              <article
-                className={`alan-project-card alan-project-card--${unityProject.variant}`}
-                key={unityProject.title}
-              >
-                <div className="alan-project-card__media">
-                  <img
-                    src={unityProject.image}
-                    alt={unityProject.alt}
-                    className="alan-project-card__image"
-                    draggable={false}
-                  />
-                  <div className="alan-project-card__overlay">
-                    <p className="alan-project-card__title">
-                      {unityProject.title}
-                    </p>
-                    <p className="alan-project-card__text">
-                      {unityProject.description}
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </section>
 
           <p className="alan-game-over">Game Over</p>
         </section>
