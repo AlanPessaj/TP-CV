@@ -2,6 +2,7 @@ import alanBackground from './assets/images/alan-background.png'
 import alanCursor from './assets/images/alan-cursor.png'
 import alanNotepads from './assets/images/alan-notepads.png'
 import alanSystemMessage from './assets/images/alan-systemmessage.png'
+import alanGameOverImage from './assets/images/agregar.png'
 import './AlanPage.css'
 
 export default function AlanPage() {
@@ -87,6 +88,12 @@ export default function AlanPage() {
             <p className="alan-info__code">{'}'}</p>
           </article>
 
+          <img
+            src={alanGameOverImage}
+            alt="Pixel art joystick"
+            className="alan-game-over__image"
+            draggable={false}
+          />
           <p className="alan-game-over">Game Over</p>
         </section>
       </div>

@@ -208,6 +208,16 @@
   text-transform: uppercase;
 }
 
+.alan-game-over__image {
+  display: block;
+  margin: 0 auto;
+  width: clamp(290px, 56vw, 500px);
+  height: auto;
+  image-rendering: pixelated;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 @media (max-width: 720px) {
   .alan-window__titlebar {
     font-size: 0.65rem;

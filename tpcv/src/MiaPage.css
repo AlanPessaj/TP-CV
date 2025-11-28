@@ -191,7 +191,19 @@
 .contact-section {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
   padding-top: 3.5rem;
+}
+
+.contact-intro-image {
+  width: min(420px, 78%);
+  display: block;
+  position: relative;
+  top: -160px;
+  margin-bottom: -5rem;
+  filter: drop-shadow(0 16px 22px rgba(0, 0, 0, 0.28));
 }
 
 .contact-wrapper {

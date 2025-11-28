@@ -2,6 +2,7 @@ import heroImage from './assets/images/portfolio-hero.png'
 import aboutBackground from './assets/images/about-background.png'
 import middleBackground from './assets/images/middle-background.png'
 import bottomBackground from './assets/images/bottom-background.png'
+import contactIntroImage from './assets/images/agregar2.png'
 import './MiaPage.css'
 
 export default function MiaPage() {
@@ -66,6 +67,12 @@ export default function MiaPage() {
       </section>
 
       <footer className="contact-section">
+        <img
+          src={contactIntroImage}
+          alt="Cuaderno cerrado con notas"
+          draggable={false}
+          className="contact-intro-image"
+        />
         <div className="contact-wrapper">
           <img
             src={bottomBackground}
